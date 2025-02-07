@@ -9,7 +9,7 @@ export const generateUsers = ( repeat ) => {
 
     const users = []
 
-    for (let i = 0; i < repeat ; i++) {
+    for (let i = 0; i < repeat ; i++) {        
 
         users.push({
             password: createHash('coder123'),
@@ -18,6 +18,7 @@ export const generateUsers = ( repeat ) => {
         })
         
     }
+   
  
     return users
 

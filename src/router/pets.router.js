@@ -1,5 +1,5 @@
 import { Router }   from "express";
-import { petModel } from "../models/pets.model.js";
+import { petModel } from "../dao/models/pets.model.js";
 
 const router   = Router()
 
