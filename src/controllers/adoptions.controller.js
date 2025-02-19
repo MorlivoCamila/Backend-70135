@@ -9,7 +9,11 @@ const getAllAdoptions = async(req,res)=>{
 
 const getAdoption = async(req,res)=>{
     const adoptionId = req.params.aid;
+    console.log(adoptionId);
+
     const adoption = await adoptionsService.getBy({_id:adoptionId})
+    console.log(adoption);
+     
     if(!adoption) return res.status(404).send({status:"error",error:"Adoption not found"})
     res.send({status:"success",payload:adoption})
 }
